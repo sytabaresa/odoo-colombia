@@ -1,24 +1,63 @@
 ### Lista de impuestos
 
+```
+## INC
+                                  ¦   BASE   ¦    IMPUESTO   ¦
+----¦--------------------------   ¦----------¦---------------¦
+4%  ¦ Servicios gravados          ¦          ¦               ¦
+----¦-----------------------------¦----------¦---------------¦
+    ¦ Servicios gravados          ¦          ¦               ¦
+8%  ¦ Venta de bienes gravados    ¦          ¦               ¦
+    ¦ Importacion de b. gra.      ¦          ¦               ¦
+----¦-----------------------------¦----------¦---------------¦
+16% ¦ Venta de bienes gravados    ¦          ¦               ¦
+    ¦ Importacion de b. gra.      ¦          ¦               ¦
+ 
 
-                               ¦    Base    ¦    Impuesto    ¦
-----¦--------------------------¦------------¦----------------¦
-4%  ¦ Servicios gravados       ¦            ¦                ¦
-----¦--------------------------¦------------¦----------------¦
-    ¦ Servicios gravados       ¦            ¦                ¦
-8%  ¦ Venta de bienes gravados ¦            ¦                ¦
-    ¦ Importacion de b. gra.   ¦            ¦                ¦
-----¦--------------------------¦------------¦----------------¦
-16% ¦ Venta de bienes gravados ¦            ¦                ¦
-    ¦ Importacion de b. gra.   ¦            ¦                ¦
-    
-**CREE**
-----¦--------------------------¦------------¦----------------¦
-4‰  ¦ Operaciones  ¦            ¦                ¦
-----¦--------------¦------------¦----------------¦
-8‰  ¦ Operaciones  ¦            ¦                ¦
-----¦--------------¦------------¦----------------¦
-16‰ ¦ Operaciones  ¦            ¦                ¦
+## CREE
+
+----¦-----------------------------¦----------¦---------------¦
+4‰  ¦ Operaciones                 ¦          ¦               ¦
+----¦-----------------------------¦----------¦---------------¦
+8‰  ¦ Operaciones                 ¦          ¦               ¦
+----¦-----------------------------¦----------¦---------------¦
+16‰ ¦ Operaciones                 ¦          ¦               ¦
+
+
+## ReteFUENTE
+                                  ¦   BASE   ¦   RETENCION   ¦  >>    Con Convenio     ¦    Sin Convenio
+---------------------------------------------------------------->>-----------------------------------------
+C ¦ Empleados 383 ET              ¦          ¦               ¦  >>
+O ¦ Empleados 384 ET              ¦          ¦               ¦  >>
+N ¦ Trab. por cuenta propia       ¦          ¦               ¦  >>
+C ¦ Salarios no empleados         ¦          ¦               ¦  >>
+E ¦ Honorarios y comisiones       ¦          ¦               ¦  >>
+P ¦ Servicios                     ¦          ¦               ¦  R>
+T ¦ Arrendamientos (m y inm)      ¦          ¦               ¦  E>
+O ¦ Compras                       ¦          ¦               ¦  D>
+  ¦ Dividendos y Participaciones  ¦          ¦               ¦  U> = Dividendos y Participaciones =
+  ¦ Rend. financieros             ¦          ¦               ¦  C> = Rend. financieros =
+  ¦ Trans. con tarjetas           ¦          ¦               ¦  E>
+  ¦ Cont. de construccion         ¦          ¦               ¦  >>
+  ¦ Enajenacion antes autoridades ¦          ¦               ¦  A>
+  ¦ Loteria,rifas,apuestas y sim. ¦          ¦               ¦  >>
+  ¦ Otros                         ¦          ¦               ¦  >>
+  ¦                               ¦          ¦               ¦  >> Enajenacion de activos y otras ret.
+  ¦                               ¦          ¦               ¦  >> Pagos por explotacion de intangibles
+  ¦                               ¦          ¦               ¦  >> Servicios
+  ¦                               ¦          ¦               ¦  >> Serv. tecnicos, ass. tecnica, consultoria
+
+
+
+## ReteIVA
+
+C ¦ Aplicado a regimen commun
+O ¦ Aplicado a regimen simplificado
+N ¦ Aplicado a no residentes
+C ¦
+
+
+## IVA
 
 B ¦ I ¦ Operaciones al 5%               : L ¦ G ¦ = al 5% =
 A ¦ N ¦ Operaciones al 16%              : I ¦ E ¦ = al 16% =
@@ -52,3 +91,5 @@ E ¦ R ¦ Exportacion Bienes              : I ¦ E ¦
   ¦                                     :   ¦   ¦ IVA desc. por IN gasolina y ACPM
   ¦                                     :   ¦   ¦ Ajuste impuesto desc. (hurto,perdidas,castigo de invent.)
   ¦ / Devoluciones                      :   ¦   ¦ = Recuperado en devoluciones de venta =
+
+```
