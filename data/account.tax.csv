@@ -1,0 +1,100 @@
+active;amount;applicable_type;include_base_amount;price_include;name;type;child_depend;sequence;type_tax_use
+True;0.04;Always;True;True;i-inc-serv-040 ->;Percentage;False;;Sale
+True;0.08;Always;True;True;i-inc-serv-080 ->;Percentage;False;;Sale
+True;0.08;Always;True;True;i-inc-bien-080 ->;Percentage;False;;Sale
+True;0.16;Always;True;True;i-inc-serv-160 ->;Percentage;False;;Sale
+True;0.16;Always;True;True;i-inc-bien-160 ->;Percentage;False;;Sale
+True;0.04;Always;True;True;i-inc-serv-040 <-;Percentage;False;;Purchase
+True;0.08;Always;True;True;i-inc-serv-080 <-;Percentage;False;;Purchase
+True;0.08;Always;True;True;i-inc-bien-080 <-;Percentage;False;;Purchase
+True;0.16;Always;True;True;i-inc-serv-160 <-;Percentage;False;;Purchase
+True;0.16;Always;True;True;i-inc-bien-160 <-;Percentage;False;;Purchase
+True;0.08;Always;True;False;i-inc-bien-080 <- IMP;Percentage;False;;Purchase
+True;0.16;Always;True;False;i-inc-bien-160 <- IMP;Percentage;False;;Purchase
+True;0.004;Always;True;True;i-cre-0040 ->;Percentage;False;;Sale
+True;0.008;Always;True;True;i-cre-0080 ->;Percentage;False;;Sale
+True;0.016;Always;True;True;i-cre-0016 ->;Percentage;False;;Sale
+True;0.05;Always;False;False;i-iva-bien-050 ->;Percentage;False;;Sale
+True;0.05;Always;False;False;i-iva-serv-050 ->;Percentage;False;;Sale
+True;0.16;Always;False;False;i-iva-bien-160 ->;Percentage;False;;Sale
+True;0.16;Always;False;False;i-iva-serv-160 ->;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-exen ->;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-excl ->;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-n.gr ->;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-bien -> EXP;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-serv -> EXP;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-exen -> EXP;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-excl -> EXP;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-n.gr -> EXP;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-bien -> SCI;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-serv -> SCI;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-exen -> SCI;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-excl -> SCI;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-n.gr -> SCI;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-bien -> ZFR;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-serv -> ZFR;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-exen -> ZFR;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-excl -> ZFR;Percentage;False;;Sale
+True;0;Always;False;False;i-iva-n.gr -> ZFR;Percentage;False;;Sale
+True;1;Always;False;False;i-iva-bien-050 -> GRA;Percentage;True;;Sale
+True;1;Always;False;False;i-iva-serv-050 -> GRA;Percentage;True;;Sale
+True;1;Always;False;False;i-iva-bien-160 -> GRA;Percentage;True;;Sale
+True;1;Always;False;False;i-iva-serv-160 -> GRA;Percentage;True;;Sale
+True;0.5;Always;False;False;i-iva-aiu ->;Percentage;False;;Sale
+True;0.5;Always;False;False;i-iva-suer ->;Percentage;False;;Sale
+True;0.5;Always;False;False;i-iva-cerv ->;Percentage;False;;Sale
+True;0.05;Always;False;False;i-iva-bien-050 <-;Percentage;False;;Purchase
+True;0.05;Always;False;False;i-iva-serv-050 <-;Percentage;False;;Purchase
+True;0.16;Always;False;False;i-iva-bien-160 <-;Percentage;False;;Purchase
+True;0.16;Always;False;False;i-iva-serv-160 <-;Percentage;False;;Purchase
+True;0;Always;False;False;i-iva-exen <-;Percentage;False;;Purchase
+True;0;Always;False;False;i-iva-excl <-;Percentage;False;;Purchase
+True;0;Always;False;False;i-iva-n.gr <-;Percentage;False;;Purchase
+True;1;Always;False;False;i-iva-bien-050 <- IMP;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-serv-050 <- IMP;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-bien-160 <- IMP;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-serv-160 <- IMP;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-exen <- IMP;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-excl <- IMP;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-n.gr <- IMP;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-bien-050 <- ZFR;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-serv-050 <- ZFR;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-bien-160 <- ZFR;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-serv-160 <- ZFR;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-exen <- ZFR;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-excl <- ZFR;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-n.gr <- ZFR;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-bien-0075 <- RSI;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-serv-0075 <- RSI;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-bien-0240 <- RSI;Percentage;True;;Purchase
+True;1;Always;False;False;i-iva-serv-0240 <- RSI;Percentage;True;;Purchase
+True;;Always;True;True;r-ren-383 <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-384 <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-tcp <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-sne <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-hyc <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-ser <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-arr <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-com <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-dyp <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-rfi <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-tct <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-cdc <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-ena <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-lra <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-otr <-;Percentage;False;;Purchase
+True;;Always;True;True;r-ren-383 ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-384 ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-tcp ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-sne ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-hyc ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-ser ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-arr ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-com ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-dyp ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-rfi ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-tct ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-cdc ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-ena ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-lra ->;Percentage;False;;Sale
+True;;Always;True;True;r-ren-otr ->;Percentage;False;;Sale
