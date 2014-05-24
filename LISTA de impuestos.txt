@@ -61,7 +61,7 @@ r-ren-sne ->
 r-ren-hyc ->
 r-ren-ser ->
 r-ren-arr ->
-r-ren-com ->
+r-ren-com ->         faltan aca los casos exterior con /sin convenio
 r-ren-dyp ->
 r-ren-rfi ->
 r-ren-tct ->
@@ -70,5 +70,6 @@ r-ren-ena ->
 r-ren-lra ->
 r-ren-otr ->
 
+faltan aca los conceptos de autoretencion
 
-
+faltan todos los conceptos de ICA
