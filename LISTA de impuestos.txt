@@ -1,0 +1,74 @@
+i-inc-serv-040 ->
+i-inc-serv-080 ->
+i-inc-bien-080 ->
+i-inc-serv-160 ->
+i-inc-bien-160 ->
+
+*saldo zero via cuenta informativa*
+i-inc-serv-040 <-
+i-inc-serv-080 <-
+i-inc-bien-080 <-       i-inc-bien-080 <- IMP
+i-inc-serv-160 <-
+i-inc-bien-160 <-       i-inc-bien-160 <- IMP
+
+
+i-cre-004 ->
+i-cre-080 ->
+i-cre-016 ->
+
+i-iva-bien-050 ->       i-iva-bien -> EXP           i-iva-bien -> SCI       i-iva-bien -> ZFR       [ i-iva-bien-050 -> + r-iva-bien-0075 -> ] GRA
+i-iva-serv-050 ->       i-iva-serv -> EXP           i-iva-serv -> SCI       i-iva-serv -> ZFR       [ i-iva-serv-050 -> + r-iva-serv-0075 -> ] GRA
+i-iva-bien-160 ->              -"-                         -"-                     -"-              [ i-iva-bien-160 -> + r-iva-bien-024 -> ] GRA
+i-iva-serv-160 ->              -"-                         -"-                     -"-              [ i-iva-serv-160 -> + r-iva-serv-024 -> ] GRA
+i-iva-exen ->           i-iva-exen -> EXP           i-iva-exen -> SCI       i-iva-exen -> ZFR           
+i-iva-excl ->           i-iva-excl -> EXP           i-iva-excl -> SCI       i-iva-excl -> ZFR           
+i-iva-n.gr ->           i-iva-n.gr -> EXP           i-iva-n.gr -> SCI       i-iva-n.gr -> ZFR
+
+*IVAs especiales*
+i-iva-aiu ->
+i-iva-suer ->
+i-iva-cerv ->
+
+i-iva-bien-050 <-       i-iva-bien-050 <- IMP       i-iva-bien-050 <- ZFR       i-iva-bien-0075 <- RSI
+i-iva-serv-050 <-       i-iva-serv-050 <- IMP       i-iva-serv-050 <- ZFR       i-iva-serv-0075 <- RSI
+i-iva-bien-160 <-       i-iva-bien-160 <- IMP       i-iva-bien-160 <- ZFR       i-iva-bien-0240 <- RSI
+i-iva-serv-160 <-       i-iva-serv-160 <- IMP       i-iva-serv-160 <- ZFR       i-iva-serv-0240 <- RSI
+i-iva-exen <-           i-iva-exen <- IMP           i-iva-exen <- ZFR           
+i-iva-excl <-           i-iva-excl <- IMP           i-iva-excl <- ZFR           
+i-iva-n.gr <-           i-iva-n.gr <- IMP           i-iva-n.gr <- ZFR           
+
+r-ren-383 <-
+r-ren-384 <-
+r-ren-tcp <-
+r-ren-sne <-
+r-ren-hyc 110 <-
+r-ren-hyc 030 <-
+r-ren-ser <-
+r-ren-arr <-
+r-ren-com <-
+r-ren-dyp <-
+r-ren-rfi <-
+r-ren-tct <-
+r-ren-cdc <-
+r-ren-ena-001 <-
+r-ren-lra <-
+r-ren-otr <-
+
+r-ren-383 ->
+r-ren-384 ->
+r-ren-tcp ->
+r-ren-sne ->
+r-ren-hyc ->
+r-ren-ser ->
+r-ren-arr ->
+r-ren-com ->
+r-ren-dyp ->
+r-ren-rfi ->
+r-ren-tct ->
+r-ren-cdc ->
+r-ren-ena ->
+r-ren-lra ->
+r-ren-otr ->
+
+
+
