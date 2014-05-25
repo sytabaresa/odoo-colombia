@@ -1,19 +1,19 @@
 active;amount;applicable_type;include_base_amount;price_include;name;type;child_depend;sequence;type_tax_use
-True;0.04;Always;True;True;i-inc-serv-040 ->;Percentage;False;;Sale
-True;0.08;Always;True;True;i-inc-serv-080 ->;Percentage;False;;Sale
-True;0.08;Always;True;True;i-inc-bien-080 ->;Percentage;False;;Sale
-True;0.16;Always;True;True;i-inc-serv-160 ->;Percentage;False;;Sale
-True;0.16;Always;True;True;i-inc-bien-160 ->;Percentage;False;;Sale
-True;0.04;Always;True;True;i-inc-serv-040 <-;Percentage;False;;Purchase
-True;0.08;Always;True;True;i-inc-serv-080 <-;Percentage;False;;Purchase
-True;0.08;Always;True;True;i-inc-bien-080 <-;Percentage;False;;Purchase
-True;0.16;Always;True;True;i-inc-serv-160 <-;Percentage;False;;Purchase
-True;0.16;Always;True;True;i-inc-bien-160 <-;Percentage;False;;Purchase
+True;0.04;Always;False;True;i-inc-serv-040 ->;Percentage;False;;Sale
+True;0.08;Always;False;True;i-inc-serv-080 ->;Percentage;False;;Sale
+True;0.08;Always;False;True;i-inc-bien-080 ->;Percentage;False;;Sale
+True;0.16;Always;False;True;i-inc-serv-160 ->;Percentage;False;;Sale
+True;0.16;Always;False;True;i-inc-bien-160 ->;Percentage;False;;Sale
+True;0.04;Always;False;True;i-inc-serv-040 <-;Percentage;False;;Purchase
+True;0.08;Always;False;True;i-inc-serv-080 <-;Percentage;False;;Purchase
+True;0.08;Always;False;True;i-inc-bien-080 <-;Percentage;False;;Purchase
+True;0.16;Always;False;True;i-inc-serv-160 <-;Percentage;False;;Purchase
+True;0.16;Always;False;True;i-inc-bien-160 <-;Percentage;False;;Purchase
 True;0.08;Always;True;False;i-inc-bien-080 <- IMP;Percentage;False;;Purchase
 True;0.16;Always;True;False;i-inc-bien-160 <- IMP;Percentage;False;;Purchase
-True;0.004;Always;True;True;i-cre-0040 ->;Percentage;False;;Sale
-True;0.008;Always;True;True;i-cre-0080 ->;Percentage;False;;Sale
-True;0.016;Always;True;True;i-cre-0016 ->;Percentage;False;;Sale
+True;0.004;Always;False;True;i-cre-0040 ->;Percentage;False;;Sale
+True;0.008;Always;False;True;i-cre-0080 ->;Percentage;False;;Sale
+True;0.016;Always;False;True;i-cre-0016 ->;Percentage;False;;Sale
 True;0.05;Always;False;False;i-iva-bien-050 ->;Percentage;False;;Sale
 True;0.05;Always;False;False;i-iva-serv-050 ->;Percentage;False;;Sale
 True;0.16;Always;False;False;i-iva-bien-160 ->;Percentage;False;;Sale
