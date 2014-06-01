@@ -1,0 +1,34 @@
+id,code,name,country_id:id
+co_05,05,Antioquia,base.co
+co_08,08,Atlántico,base.co
+co_11,11,"Bogotá, D.C.",base.co
+co_13,13,Bolívar,base.co
+co_15,15,Boyacá,base.co
+co_17,17,Caldas,base.co
+co_18,18,Caquetá,base.co
+co_19,19,Cauca,base.co
+co_20,20,Cesar,base.co
+co_23,23,Córdoba,base.co
+co_25,25,Cundinamarca,base.co
+co_27,27,Chocó,base.co
+co_41,41,Huila,base.co
+co_44,44,La Guajira,base.co
+co_47,47,Magdalena,base.co
+co_50,50,Meta,base.co
+co_52,52,Nariño,base.co
+co_54,54,Norte de Santander,base.co
+co_63,63,Quindio,base.co
+co_66,66,Risaralda,base.co
+co_68,68,Santander,base.co
+co_70,70,Sucre,base.co
+co_73,73,Tolima,base.co
+co_76,76,Valle del Cauca,base.co
+co_81,81,Arauca,base.co
+co_85,85,Casanare,base.co
+co_86,86,Putumayo,base.co
+co_88,88,"Archipiélago de San Andrés, Providencia y Santa Catalina",base.co
+co_91,91,Amazonas,base.co
+co_94,94,Guainía,base.co
+co_95,95,Guaviare,base.co
+co_97,97,Vaupés,base.co
+co_99,99,Vichada,base.co
