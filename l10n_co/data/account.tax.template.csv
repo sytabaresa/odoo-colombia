@@ -1,0 +1,116 @@
+id,domain,description,chart_template_id:id,type_tax_use,name,sequence,amount,parent_id:id,child_depend,price_include,type,account_collected_id:id,account_paid_id:id,base_code_id:id,tax_code_id:id,ref_base_code_id:id,ref_tax_code_id:id,ref_base_sign,ref_tax_sign,base_sign,tax_sign
+tax_iinc_04sv,inc,inc.04s >>,,Sale,INC 4% SERVICIO,,0.04,,,,percent,,,atctn_inc_04_S_B,atctn_inc_04_S_V,atctn_inc_04_S_DB,atctn_inc_04_S_DV,-1,-1,1,1
+tax_iinc_08sv,inc,inc.08s >>,,Sale,INC 8% BIEN,,0.08,,,,percent,,,atctn_inc_08_B_B,atctn_inc_08_B_V,atctn_inc_08_B_DB,atctn_inc_08_B_DV,-1,-1,1,1
+tax_iinc_08bv,inc,inc.08b >>,,Sale,INC 8% SERVICIO,,0.08,,,,percent,,,atctn_inc_08_S_B,atctn_inc_08_S_V,atctn_inc_08_S_DB,atctn_inc_08_S_DV,-1,-1,1,1
+tax_iinc_16sv,inc,inc.16s >>,,Sale,INC 16% BIEN,,0.16,,,,percent,,,atctn_inc_16_B_B,atctn_inc_16_B_V,atctn_inc_16_B_DB,atctn_inc_16_B_DV,-1,-1,1,1
+tax_iinc_16bv,inc,inc.16b >>,,Sale,INC 16% SERVICIO,,0.16,,,,percent,,,atctn_inc_16_S_B,atctn_inc_16_S_V,atctn_inc_16_S_DB,atctn_inc_16_S_DV,-1,-1,1,1
+tax_iinc_04sc,inc,inc.04s <<,,Purchase,INC 4% SERVICIO,,0.04,,,,,,,,,,,,,,
+tax_iinc_08sc,inc,inc.08s <<,,Purchase,INC 8% BIEN,,0.08,,,,,,,,,,,,,,
+tax_iinc_08bc,inc,inc.08b <<,,Purchase,INC 8% SERVICIO,,0.08,,,,,,,,,,,,,,
+tax_iinc_16sc,inc,inc.16s <<,,Purchase,INC 16% BIEN,,0.16,,,,,,,,,,,,,,
+tax_iinc_16bc,inc,inc.16b <<,,Purchase,INC 16% SERVICIO,,0.16,,,,,,,,,,,,,,
+tax_iinc_08bc_IMP,inc,inc.08b << IMP,,Purchase,INC 8% BIEN IMPORT,,0.08,,,,,,,atctn_inc_08_IMP_B,atctn_inc_08_IMP_V,atctn_inc_08_IMP_DB,atctn_inc_08_IMP_DV,-1,-1,1,1
+tax_iinc_16bc_IMP,inc,inc.16b << IMP,,Purchase,INC 16% BIEN IMPORT,,0.16,,,,,,,atctn_inc_16_IMP_B,atctn_inc_16_IMP_V,atctn_inc_16_IMP_DB,atctn_inc_16_IMP_DV,-1,-1,1,1
+tax_arcree_004v,ar_cree,cree.004 >>,,Sale,CREE 4 ‰,,1,,TRUE,,,,,,,,,,,,
+tax_arcree_004v_AR,ar_cree,cree.004 >>,,Sale,CREE 4 ‰ AUTORRETENCION,,-0.004,tax_arcree_004v,,,,,,atctn_r_cree_0004_B,atctn_r_cree_0004_V,atctn_r_cree_0004_DB,atctn_r_cree_0004_DV,-1,-1,1,1
+tax_arcree_004v_CP,ar_cree,cree.004 >>,,Sale,CREE 4 ‰ CONTRAPARTIDA,,0.004,tax_arcree_004v,,,,,,,,,,,,,
+tax_arcree_008v,ar_cree,cree.008 >>,,Sale,CREE 8 ‰,,1,,TRUE,,,,,,,,,,,,
+tax_arcree_008v_AR,ar_cree,cree.008 >>,,Sale,CREE 8 ‰ AUTORRETENCION,,-0.008,tax_arcree_008v,,,,,,atctn_r_cree_0008_B,atctn_r_cree_0008_V,atctn_r_cree_0008_DB,atctn_r_cree_0008_DV,-1,-1,1,1
+tax_arcree_008v_CP,ar_cree,cree.008 >>,,Sale,CREE 8 ‰ CONTRAPARTIDA,,0.008,tax_arcree_008v,,,,,,,,,,,,,
+tax_arcree_016v,ar_cree,cree.016 >>,,Sale,CREE 16 ‰,,1,,TRUE,,,,,,,,,,,,
+tax_arcree_016v_AR,ar_cree,cree.016 >>,,Sale,CREE 16 ‰ AUTORRETENCION,,-0.016,tax_arcree_016v,,,,,,atctn_r_cree_0016_B,atctn_r_cree_0016_V,atctn_r_cree_0016_DB,atctn_r_cree_0016_DV,-1,-1,1,1
+tax_arcree_016v_CP,ar_cree,cree.016 >>,,Sale,CREE 16 ‰ CONTRAPARTIDA,,0.016,tax_arcree_016v,,,,,,,,,,,,,
+tax_iiva_05bv,iva,iva.05b >>,,Sale,IVA 5% BIEN NACIONAL,,0.05,,,,,,,atctn_iva_B0500_V_NAT_B,atctn_iva_B0500_V_NAT_V,atctn_iva_B0500_V_NAT_DB,atctn_iva_B0500_V_NAT_DV,-1,-1,1,1
+tax_iiva_05bv_EXT,iva,iva.05b >> EXT,,Sale,IVA (5%) BIEN EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_B0500_V_EXT_B,atctn_iva_B0500_V_EXT_V,atctn_iva_B0500_V_EXT_DB,atctn_iva_B0500_V_EXT_DV,-1,-1,1,1
+tax_iiva_05bv_ZFR,iva,iva.05b >> ZFR,,Sale,IVA (5%) BIEN ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_B0500_V_EXT_B,atctn_iva_B0500_V_EXT_V,atctn_iva_B0500_V_EXT_DB,atctn_iva_B0500_V_EXT_DV,-1,-1,1,1
+tax_iiva_05bv_SCI,iva,iva.05b >> SCI,,Sale,IVA (5%) BIEN SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_B0500_V_SCI_B,atctn_iva_B0500_V_SCI_V,atctn_iva_B0500_V_SCI_DB,atctn_iva_B0500_V_SCI_DV,-1,-1,1,1
+tax_iiva_05sv,iva,iva.05s >>,,Sale,IVA 5% SERVICIO,,0.05,,,,,,,atctn_iva_S0500_V_NAT_B,atctn_iva_S0500_V_NAT_V,atctn_iva_S0500_V_NAT_DB,atctn_iva_S0500_V_NAT_DV,-1,-1,1,1
+tax_iiva_05sv_EXT,iva,iva.05s >> EXT,,Sale,IVA (5%) SERVICIO EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_S0500_V_EXT_B,atctn_iva_S0500_V_EXT_V,atctn_iva_S0500_V_EXT_DB,atctn_iva_S0500_V_EXT_DV,-1,-1,1,1
+tax_iiva_05sv_ZFR,iva,iva.05s >> ZFR,,Sale,IVA (5%) SERVICIO ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_S0500_V_EXT_B,atctn_iva_S0500_V_EXT_V,atctn_iva_S0500_V_EXT_DB,atctn_iva_S0500_V_EXT_DV,-1,-1,1,1
+tax_iiva_05sv_SCI,iva,iva.05s >> SCI,,Sale,IVA (5%) SERVICIO SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_S0500_V_SCI_B,atctn_iva_S0500_V_SCI_V,atctn_iva_S0500_V_SCI_DB,atctn_iva_S0500_V_SCI_DV,-1,-1,1,1
+tax_iiva_16bv,iva,iva.16b >>,,Sale,IVA 16% BIEN,,0.16,,,,,,,atctn_iva_B1600_V_NAT_B,atctn_iva_B1600_V_NAT_V,atctn_iva_B1600_V_NAT_DB,atctn_iva_B1600_V_NAT_DV,-1,-1,1,1
+tax_iiva_16bv_EXT,iva,iva.16b >> EXT,,Sale,IVA (16%) BIEN EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_B1600_V_EXT_B,atctn_iva_B1600_V_EXT_V,atctn_iva_B1600_V_EXT_DB,atctn_iva_B1600_V_EXT_DV,-1,-1,1,1
+tax_iiva_16bv_ZFR,iva,iva.16b >> ZFR,,Sale,IVA (16%) BIEN ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_B1600_V_EXT_B,atctn_iva_B1600_V_EXT_V,atctn_iva_B1600_V_EXT_DB,atctn_iva_B1600_V_EXT_DV,-1,-1,1,1
+tax_iiva_16bv_SCI,iva,iva.16b >> SCI,,Sale,IVA (16%) BIEN SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_B1600_V_SCI_B,atctn_iva_B1600_V_SCI_V,atctn_iva_B1600_V_SCI_DB,atctn_iva_B1600_V_SCI_DV,-1,-1,1,1
+tax_iiva_16sv,iva,iva.16s >>,,Sale,IVA 16% SERVICIO,,0.16,,,,,,,atctn_iva_S1600_V_NAT_B,atctn_iva_S1600_V_NAT_V,atctn_iva_S1600_V_NAT_DB,atctn_iva_S1600_V_NAT_DV,-1,-1,1,1
+tax_iiva_16sv_EXT,iva,iva.16s >> EXT,,Sale,IVA (16%) SERVICIO EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_S1600_V_EXT_B,atctn_iva_S1600_V_EXT_V,atctn_iva_S1600_V_EXT_DB,atctn_iva_S1600_V_EXT_DV,-1,-1,1,1
+tax_iiva_16sv_ZFR,iva,iva.16s >> ZFR,,Sale,IVA (16%) SERVICIO ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_S1600_V_EXT_B,atctn_iva_S1600_V_EXT_V,atctn_iva_S1600_V_EXT_DB,atctn_iva_S1600_V_EXT_DV,-1,-1,1,1
+tax_iiva_16sv_SCI,iva,iva.16s >> SCI,,Sale,IVA (16%) SERVICIO SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_S1600_V_SCI_B,atctn_iva_S1600_V_SCI_V,atctn_iva_S1600_V_SCI_DB,atctn_iva_S1600_V_SCI_DV,-1,-1,1,1
+tax_iiva_exe_bv,iva,iva.exe b >>,,Sale,IVA BIEN EXENTO,,0.00,,,,,,,atctn_iva_Bexen_V_NAT_B,atctn_iva_Bexen_V_NAT_V,atctn_iva_Bexen_V_NAT_DB,atctn_iva_Bexen_V_NAT_DV,-1,-1,1,1
+tax_iiva_exe_bv_EXT,iva,iva.exe b >> EXT,,Sale,IVA BIEN EXENTO EXTERIOR,,0.00,,,,,,,atctn_iva_Bexen_V_EXT_B,atctn_iva_Bexen_V_EXT_V,atctn_iva_Bexen_V_EXT_DB,atctn_iva_Bexen_V_EXT_DV,-1,-1,1,1
+tax_iiva_exe_bv_ZFR,iva,iva.exe b >> ZFR,,Sale,IVA BIEN EXENTO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Bexen_V_EXT_B,atctn_iva_Bexen_V_EXT_V,atctn_iva_Bexen_V_EXT_DB,atctn_iva_Bexen_V_EXT_DV,-1,-1,1,1
+tax_iiva_exe_bv_SCI,iva,iva.exe b >> SCI,,Sale,IVA BIEN EXENTO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Bexen_V_SCI_B,atctn_iva_Bexen_V_SCI_V,atctn_iva_Bexen_V_SCI_DB,atctn_iva_Bexen_V_SCI_DV,-1,-1,1,1
+tax_iiva_exe_sv,iva,iva.exe s >>,,Sale,IVA SERVICIO EXENTO,,0.00,,,,,,,atctn_iva_Sexen_V_NAT_B,atctn_iva_Sexen_V_NAT_V,atctn_iva_Sexen_V_NAT_DB,atctn_iva_Sexen_V_NAT_DV,-1,-1,1,1
+tax_iiva_exe_sv_EXT,iva,iva.exe s >> EXT,,Sale,IVA SERVICIO EXENTO EXTERIOR,,0.00,,,,,,,atctn_iva_Sexen_V_EXT_B,atctn_iva_Sexen_V_EXT_V,atctn_iva_Sexen_V_EXT_DB,atctn_iva_Sexen_V_EXT_DV,-1,-1,1,1
+tax_iiva_exe_sv_ZFR,iva,iva.exe s >> ZFR,,Sale,IVA SERVICIO EXENTO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Sexen_V_EXT_B,atctn_iva_Sexen_V_EXT_V,atctn_iva_Sexen_V_EXT_DB,atctn_iva_Sexen_V_EXT_DV,-1,-1,1,1
+tax_iiva_exe_sv_SCI,iva,iva.exe s >> SCI,,Sale,IVA SERVICIO EXENTO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Sexen_V_SCI_B,atctn_iva_Sexen_V_SCI_V,atctn_iva_Sexen_V_SCI_DB,atctn_iva_Sexen_V_SCI_DV,-1,-1,1,1
+tax_iiva_exc_bv,iva,iva.exc b >>,,Sale,IVA BIEN EXCLUIDO,,0.00,,,,,,,atctn_iva_Bexcl_V_NAT_B,atctn_iva_Bexcl_V_NAT_V,atctn_iva_Bexcl_V_NAT_DB,atctn_iva_Bexcl_V_NAT_DV,-1,-1,1,1
+tax_iiva_exc_bv_EXT,iva,iva.exc b >> EXT,,Sale,IVA BIEN EXCLUIDO EXTERIOR,,0.00,,,,,,,atctn_iva_Bexcl_V_EXT_B,atctn_iva_Bexcl_V_EXT_V,atctn_iva_Bexcl_V_EXT_DB,atctn_iva_Bexcl_V_EXT_DV,-1,-1,1,1
+tax_iiva_exc_bv_ZFR,iva,iva.exc b >> ZFR,,Sale,IVA BIEN EXCLUIDO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Bexcl_V_EXT_B,atctn_iva_Bexcl_V_EXT_V,atctn_iva_Bexcl_V_EXT_DB,atctn_iva_Bexcl_V_EXT_DV,-1,-1,1,1
+tax_iiva_exc_bv_SCI,iva,iva.exc b >> SCI,,Sale,IVA BIEN EXCLUIDO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Bexcl_V_SCI_B,atctn_iva_Bexcl_V_SCI_V,atctn_iva_Bexcl_V_SCI_DB,atctn_iva_Bexcl_V_SCI_DV,-1,-1,1,1
+tax_iiva_exc_sv,iva,iva.exc s >>,,Sale,IVA SERVICIO EXCLUIDO,,0.00,,,,,,,atctn_iva_Sexcl_V_NAT_B,atctn_iva_Sexcl_V_NAT_V,atctn_iva_Sexcl_V_NAT_DB,atctn_iva_Sexcl_V_NAT_DV,-1,-1,1,1
+tax_iiva_exc_sv_EXT,iva,iva.exc s >> EXT,,Sale,IVA SERVICIO EXCLUIDO EXTERIOR,,0.00,,,,,,,atctn_iva_Sexcl_V_EXT_B,atctn_iva_Sexcl_V_EXT_V,atctn_iva_Sexcl_V_EXT_DB,atctn_iva_Sexcl_V_EXT_DV,-1,-1,1,1
+tax_iiva_exc_sv_ZFR,iva,iva.exc s >> ZFR,,Sale,IVA SERVICIO EXCLUIDO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Sexcl_V_EXT_B,atctn_iva_Sexcl_V_EXT_V,atctn_iva_Sexcl_V_EXT_DB,atctn_iva_Sexcl_V_EXT_DV,-1,-1,1,1
+tax_iiva_exc_sv_SCI,iva,iva.exc s >> SCI,,Sale,IVA SERVICIO EXCLUIDO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Sexcl_V_SCI_B,atctn_iva_Sexcl_V_SCI_V,atctn_iva_Sexcl_V_SCI_DB,atctn_iva_Sexcl_V_SCI_DV,-1,-1,1,1
+tax_iiva_no__bv,iva,iva.no  b >>,,Sale,IVA BIEN NO GRAVADOS,,0.00,,,,,,,atctn_iva_Bnogr_V_NAT_B,atctn_iva_Bnogr_V_NAT_V,atctn_iva_Bnogr_V_NAT_DB,atctn_iva_Bnogr_V_NAT_DV,-1,-1,1,1
+tax_iiva_no__bv_EXT,iva,iva.no  b >> EXT,,Sale,IVA BIEN NO GRAVADOS EXTERIOR,,0.00,,,,,,,atctn_iva_Bnogr_V_EXT_B,atctn_iva_Bnogr_V_EXT_V,atctn_iva_Bnogr_V_EXT_DB,atctn_iva_Bnogr_V_EXT_DV,-1,-1,1,1
+tax_iiva_no__bv_ZFR,iva,iva.no  b >> ZFR,,Sale,IVA BIEN NO GRAVADOS ZONA FRANCA,,0.00,,,,,,,atctn_iva_Bnogr_V_EXT_B,atctn_iva_Bnogr_V_EXT_V,atctn_iva_Bnogr_V_EXT_DB,atctn_iva_Bnogr_V_EXT_DV,-1,-1,1,1
+tax_iiva_no__bv_SCI,iva,iva.no  b >> SCI,,Sale,IVA BIEN NO GRAVADOS SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Bnogr_V_SCI_B,atctn_iva_Bnogr_V_SCI_V,atctn_iva_Bnogr_V_SCI_DB,atctn_iva_Bnogr_V_SCI_DV,-1,-1,1,1
+tax_iiva_no__sv,iva,iva.no  s >>,,Sale,IVA SERVICIO NO GRAVADOS,,0.00,,,,,,,atctn_iva_Snogr_V_NAT_B,atctn_iva_Snogr_V_NAT_V,atctn_iva_Snogr_V_NAT_DB,atctn_iva_Snogr_V_NAT_DV,-1,-1,1,1
+tax_iiva_no__sv_EXT,iva,iva.no  s >> EXT,,Sale,IVA SERVICIO NO GRAVADOS EXTERIOR,,0.00,,,,,,,atctn_iva_Snogr_V_EXT_B,atctn_iva_Snogr_V_EXT_V,atctn_iva_Snogr_V_EXT_DB,atctn_iva_Snogr_V_EXT_DV,-1,-1,1,1
+tax_iiva_no__sv_ZFR,iva,iva.no  s >> ZFR,,Sale,IVA SERVICIO NO GRAVADOS ZONA FRANCA,,0.00,,,,,,,atctn_iva_Snogr_V_EXT_B,atctn_iva_Snogr_V_EXT_V,atctn_iva_Snogr_V_EXT_DB,atctn_iva_Snogr_V_EXT_DV,-1,-1,1,1
+tax_iiva_no__sv_SCI,iva,iva.no  s >> SCI,,Sale,IVA SERVICIO NO GRAVADOS SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Snogr_V_SCI_B,atctn_iva_Snogr_V_SCI_V,atctn_iva_Snogr_V_SCI_DB,atctn_iva_Snogr_V_SCI_DV,-1,-1,1,1
+tax_iiva_05bc,iva,iva.05b <<,,Purchase,IVA 5% BIEN NACIONAL,,0.05,,,,,,,atctn_iva_B0500_C_NAT_B,atctn_iva_B0500_C_NAT_V,atctn_iva_B0500_C_NAT_DB,atctn_iva_B0500_C_NAT_DV,-1,-1,1,1
+tax_iiva_05bc_EXT,iva,iva.05b << EXT,,Purchase,IVA (5%) BIEN EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_B0500_C_EXT_B,atctn_iva_B0500_C_EXT_V,atctn_iva_B0500_C_EXT_DB,atctn_iva_B0500_C_EXT_DV,-1,-1,1,1
+tax_iiva_05bc_ZFR,iva,iva.05b << ZFR,,Purchase,IVA (5%) BIEN ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_B0500_C_EXT_B,atctn_iva_B0500_C_EXT_V,atctn_iva_B0500_C_EXT_DB,atctn_iva_B0500_C_EXT_DV,-1,-1,1,1
+tax_iiva_05bc_SCI,iva,iva.05b << SCI,,Purchase,IVA (5%) BIEN SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_B0500_C_SCI_B,atctn_iva_B0500_C_SCI_V,atctn_iva_B0500_C_SCI_DB,atctn_iva_B0500_C_SCI_DV,-1,-1,1,1
+tax_iiva_05sc,iva,iva.05s <<,,Purchase,IVA 5% SERVICIO,,0.05,,,,,,,atctn_iva_S0500_C_NAT_B,atctn_iva_S0500_C_NAT_V,atctn_iva_S0500_C_NAT_DB,atctn_iva_S0500_C_NAT_DV,-1,-1,1,1
+tax_iiva_05sc_EXT,iva,iva.05s << EXT,,Purchase,IVA (5%) SERVICIO EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_S0500_C_EXT_B,atctn_iva_S0500_C_EXT_V,atctn_iva_S0500_C_EXT_DB,atctn_iva_S0500_C_EXT_DV,-1,-1,1,1
+tax_iiva_05sc_ZFR,iva,iva.05s << ZFR,,Purchase,IVA (5%) SERVICIO ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_S0500_C_EXT_B,atctn_iva_S0500_C_EXT_V,atctn_iva_S0500_C_EXT_DB,atctn_iva_S0500_C_EXT_DV,-1,-1,1,1
+tax_iiva_05sc_SCI,iva,iva.05s << SCI,,Purchase,IVA (5%) SERVICIO SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_S0500_C_SCI_B,atctn_iva_S0500_C_SCI_V,atctn_iva_S0500_C_SCI_DB,atctn_iva_S0500_C_SCI_DV,-1,-1,1,1
+tax_iiva_16bc,iva,iva.16b <<,,Purchase,IVA 16% BIEN,,0.16,,,,,,,atctn_iva_B1600_C_NAT_B,atctn_iva_B1600_C_NAT_V,atctn_iva_B1600_C_NAT_DB,atctn_iva_B1600_C_NAT_DV,-1,-1,1,1
+tax_iiva_16bc_EXT,iva,iva.16b << EXT,,Purchase,IVA (16%) BIEN EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_B1600_C_EXT_B,atctn_iva_B1600_C_EXT_V,atctn_iva_B1600_C_EXT_DB,atctn_iva_B1600_C_EXT_DV,-1,-1,1,1
+tax_iiva_16bc_ZFR,iva,iva.16b << ZFR,,Purchase,IVA (16%) BIEN ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_B1600_C_EXT_B,atctn_iva_B1600_C_EXT_V,atctn_iva_B1600_C_EXT_DB,atctn_iva_B1600_C_EXT_DV,-1,-1,1,1
+tax_iiva_16bc_SCI,iva,iva.16b << SCI,,Purchase,IVA (16%) BIEN SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_B1600_C_SCI_B,atctn_iva_B1600_C_SCI_V,atctn_iva_B1600_C_SCI_DB,atctn_iva_B1600_C_SCI_DV,-1,-1,1,1
+tax_iiva_16sc,iva,iva.16s <<,,Purchase,IVA 16% SERVICIO,,0.16,,,,,,,atctn_iva_S1600_C_NAT_B,atctn_iva_S1600_C_NAT_V,atctn_iva_S1600_C_NAT_DB,atctn_iva_S1600_C_NAT_DV,-1,-1,1,1
+tax_iiva_16sc_EXT,iva,iva.16s << EXT,,Purchase,IVA (16%) SERVICIO EXTERIOR -> 0%,,0.00,,,,,,,atctn_iva_S1600_C_EXT_B,atctn_iva_S1600_C_EXT_V,atctn_iva_S1600_C_EXT_DB,atctn_iva_S1600_C_EXT_DV,-1,-1,1,1
+tax_iiva_16sc_ZFR,iva,iva.16s << ZFR,,Purchase,IVA (16%) SERVICIO ZONA FRANCA -> 0%,,0.00,,,,,,,atctn_iva_S1600_C_EXT_B,atctn_iva_S1600_C_EXT_V,atctn_iva_S1600_C_EXT_DB,atctn_iva_S1600_C_EXT_DV,-1,-1,1,1
+tax_iiva_16sc_SCI,iva,iva.16s << SCI,,Purchase,IVA (16%) SERVICIO SOCEDAD COMMERCIO INTERNACIONAL -> 0%,,0.00,,,,,,,atctn_iva_S1600_C_SCI_B,atctn_iva_S1600_C_SCI_V,atctn_iva_S1600_C_SCI_DB,atctn_iva_S1600_C_SCI_DV,-1,-1,1,1
+tax_iiva_exe bc,iva,iva.exe b <<,,Purchase,IVA BIEN EXENTO,,0.00,,,,,,,atctn_iva_Bexen_C_NAT_B,atctn_iva_Bexen_C_NAT_V,atctn_iva_Bexen_C_NAT_DB,atctn_iva_Bexen_C_NAT_DV,-1,-1,1,1
+tax_iiva_exe bc_EXT,iva,iva.exe b << EXT,,Purchase,IVA BIEN EXENTO EXTERIOR,,0.00,,,,,,,atctn_iva_Bexen_C_EXT_B,atctn_iva_Bexen_C_EXT_V,atctn_iva_Bexen_C_EXT_DB,atctn_iva_Bexen_C_EXT_DV,-1,-1,1,1
+tax_iiva_exe bc_ZFR,iva,iva.exe b << ZFR,,Purchase,IVA BIEN EXENTO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Bexen_C_EXT_B,atctn_iva_Bexen_C_EXT_V,atctn_iva_Bexen_C_EXT_DB,atctn_iva_Bexen_C_EXT_DV,-1,-1,1,1
+tax_iiva_exe bc_SCI,iva,iva.exe b << SCI,,Purchase,IVA BIEN EXENTO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Bexen_C_SCI_B,atctn_iva_Bexen_C_SCI_V,atctn_iva_Bexen_C_SCI_DB,atctn_iva_Bexen_C_SCI_DV,-1,-1,1,1
+tax_iiva_exe sc,iva,iva.exe s <<,,Purchase,IVA SERVICIO EXENTO,,0.00,,,,,,,atctn_iva_Sexen_C_NAT_B,atctn_iva_Sexen_C_NAT_V,atctn_iva_Sexen_C_NAT_DB,atctn_iva_Sexen_C_NAT_DV,-1,-1,1,1
+tax_iiva_exe sc_EXT,iva,iva.exe s << EXT,,Purchase,IVA SERVICIO EXENTO EXTERIOR,,0.00,,,,,,,atctn_iva_Sexen_C_EXT_B,atctn_iva_Sexen_C_EXT_V,atctn_iva_Sexen_C_EXT_DB,atctn_iva_Sexen_C_EXT_DV,-1,-1,1,1
+tax_iiva_exe sc_ZFR,iva,iva.exe s << ZFR,,Purchase,IVA SERVICIO EXENTO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Sexen_C_EXT_B,atctn_iva_Sexen_C_EXT_V,atctn_iva_Sexen_C_EXT_DB,atctn_iva_Sexen_C_EXT_DV,-1,-1,1,1
+tax_iiva_exe sc_SCI,iva,iva.exe s << SCI,,Purchase,IVA SERVICIO EXENTO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Sexen_C_SCI_B,atctn_iva_Sexen_C_SCI_V,atctn_iva_Sexen_C_SCI_DB,atctn_iva_Sexen_C_SCI_DV,-1,-1,1,1
+tax_iiva_exc bc,iva,iva.exc b << ,,Purchase,IVA BIEN EXCLUIDO,,0.00,,,,,,,atctn_iva_Bexcl_C_NAT_B,atctn_iva_Bexcl_C_NAT_V,atctn_iva_Bexcl_C_NAT_DB,atctn_iva_Bexcl_C_NAT_DV,-1,-1,1,1
+tax_iiva_exc bc_EXT,iva,iva.exc b << EXT,,Purchase,IVA BIEN EXCLUIDO EXTERIOR,,0.00,,,,,,,atctn_iva_Bexcl_C_EXT_B,atctn_iva_Bexcl_C_EXT_V,atctn_iva_Bexcl_C_EXT_DB,atctn_iva_Bexcl_C_EXT_DV,-1,-1,1,1
+tax_iiva_exc bc_ZFR,iva,iva.exc b << ZFR,,Purchase,IVA BIEN EXCLUIDO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Bexcl_C_EXT_B,atctn_iva_Bexcl_C_EXT_V,atctn_iva_Bexcl_C_EXT_DB,atctn_iva_Bexcl_C_EXT_DV,-1,-1,1,1
+tax_iiva_exc bc_SCI,iva,iva.exc b << SCI,,Purchase,IVA BIEN EXCLUIDO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Bexcl_C_SCI_B,atctn_iva_Bexcl_C_SCI_V,atctn_iva_Bexcl_C_SCI_DB,atctn_iva_Bexcl_C_SCI_DV,-1,-1,1,1
+tax_iiva_exc sc,iva,iva.exc s <<,,Purchase,IVA SERVICIO EXCLUIDO,,0.00,,,,,,,atctn_iva_Sexcl_C_NAT_B,atctn_iva_Sexcl_C_NAT_V,atctn_iva_Sexcl_C_NAT_DB,atctn_iva_Sexcl_C_NAT_DV,-1,-1,1,1
+tax_iiva_exc sc_EXT,iva,iva.exc s << EXT,,Purchase,IVA SERVICIO EXCLUIDO EXTERIOR,,0.00,,,,,,,atctn_iva_Sexcl_C_EXT_B,atctn_iva_Sexcl_C_EXT_V,atctn_iva_Sexcl_C_EXT_DB,atctn_iva_Sexcl_C_EXT_DV,-1,-1,1,1
+tax_iiva_exc sc_ZFR,iva,iva.exc s << ZFR,,Purchase,IVA SERVICIO EXCLUIDO ZONA FRANCA,,0.00,,,,,,,atctn_iva_Sexcl_C_EXT_B,atctn_iva_Sexcl_C_EXT_V,atctn_iva_Sexcl_C_EXT_DB,atctn_iva_Sexcl_C_EXT_DV,-1,-1,1,1
+tax_iiva_exc sc_SCI,iva,iva.exc s << SCI,,Purchase,IVA SERVICIO EXCLUIDO SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Sexcl_C_SCI_B,atctn_iva_Sexcl_C_SCI_V,atctn_iva_Sexcl_C_SCI_DB,atctn_iva_Sexcl_C_SCI_DV,-1,-1,1,1
+tax_iiva_no  bc,iva,iva.no  b << ,,Purchase,IVA BIEN NO GRAVADOS,,0.00,,,,,,,atctn_iva_Bnogr_C_NAT_B,atctn_iva_Bnogr_C_NAT_V,atctn_iva_Bnogr_C_NAT_DB,atctn_iva_Bnogr_C_NAT_DV,-1,-1,1,1
+tax_iiva_no  bc_EXT,iva,iva.no  b << EXT,,Purchase,IVA BIEN NO GRAVADOS EXTERIOR,,0.00,,,,,,,atctn_iva_Bnogr_C_EXT_B,atctn_iva_Bnogr_C_EXT_V,atctn_iva_Bnogr_C_EXT_DB,atctn_iva_Bnogr_C_EXT_DV,-1,-1,1,1
+tax_iiva_no  bc_ZFR,iva,iva.no  b << ZFR,,Purchase,IVA BIEN NO GRAVADOS ZONA FRANCA,,0.00,,,,,,,atctn_iva_Bnogr_C_EXT_B,atctn_iva_Bnogr_C_EXT_V,atctn_iva_Bnogr_C_EXT_DB,atctn_iva_Bnogr_C_EXT_DV,-1,-1,1,1
+tax_iiva_no  bc_SCI,iva,iva.no  b << SCI,,Purchase,IVA BIEN NO GRAVADOS SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Bnogr_C_SCI_B,atctn_iva_Bnogr_C_SCI_V,atctn_iva_Bnogr_C_SCI_DB,atctn_iva_Bnogr_C_SCI_DV,-1,-1,1,1
+tax_iiva_no  sc,iva,iva.no  s <<,,Purchase,IVA SERVICIO NO GRAVADOS,,0.00,,,,,,,atctn_iva_Snogr_C_NAT_B,atctn_iva_Snogr_C_NAT_V,atctn_iva_Snogr_C_NAT_DB,atctn_iva_Snogr_C_NAT_DV,-1,-1,1,1
+tax_iiva_no  sc_EXT,iva,iva.no  s << EXT,,Purchase,IVA SERVICIO NO GRAVADOS EXTERIOR,,0.00,,,,,,,atctn_iva_Snogr_C_EXT_B,atctn_iva_Snogr_C_EXT_V,atctn_iva_Snogr_C_EXT_DB,atctn_iva_Snogr_C_EXT_DV,-1,-1,1,1
+tax_iiva_no  sc_ZFR,iva,iva.no  s << ZFR,,Purchase,IVA SERVICIO NO GRAVADOS ZONA FRANCA,,0.00,,,,,,,atctn_iva_Snogr_C_EXT_B,atctn_iva_Snogr_C_EXT_V,atctn_iva_Snogr_C_EXT_DB,atctn_iva_Snogr_C_EXT_DV,-1,-1,1,1
+tax_iiva_no  sc_SCI,iva,iva.no  s << SCI,,Purchase,IVA SERVICIO NO GRAVADOS SOCEDAD COMMERCIO INTERNACIONAL,,0.00,,,,,,,atctn_iva_Snogr_C_SCI_B,atctn_iva_Snogr_C_SCI_V,atctn_iva_Snogr_C_SCI_DB,atctn_iva_Snogr_C_SCI_DV,-1,-1,1,1
+tax_riva_240_rc_v,r_iva,r.iva.240 r c >>,,Sale,RETE IVA 2.40%,,-0.024,,,,,,,atctn_r_iva_t_0240_B,atctn_r_iva_t_0240_V,atctn_r_iva_t_0240_DB,atctn_r_iva_t_0240_DV,-1,-1,1,1
+tax_riva_075_rc_v,r_iva,r.iva.075 r c >>,,Sale,RETE IVA 0.75%,,-0.0075,,,,,,,atctn_r_iva_t_0075_B,atctn_r_iva_t_0075_V,atctn_r_iva_t_0075_DB,atctn_r_iva_t_0075_DV,-1,-1,1,1
+tax_riva_240_rc_c,r_iva,r.iva.240 r c <<,,Purchase,RETE IVA 2.40% AL REGIMEN COMMUN,,-0.024,,,,,,,atctn_r_iva_e_0240_rc_B,atctn_r_iva_e_0240_rc_V,atctn_r_iva_e_0240_rc_DB,atctn_r_iva_e_0240_rc_DV,-1,-1,1,1
+tax_riva_075_rc_c,r_iva,r.iva.075 r c <<,,Purchase,RETE IVA 0.75% AL REGIMEN COMMUN,,-0.0075,,,,,,,atctn_r_iva_e_0075_rc_B,atctn_r_iva_e_0075_rc_V,atctn_r_iva_e_0075_rc_DB,atctn_r_iva_e_0075_rc_DV,-1,-1,1,1
+tax_riva_240_rs_c,r_iva,r.iva.240 r s <<,,Purchase,RETE IVA 2.40% AL REGIMEN SIMPLIFICADO,,1,,TRUE,,,,,,,,,,,,
+tax_riva_240_rs_c_asum,r_iva,r.iva.240 r s << asum,,Purchase,RETE IVA 2.40% AL REGIMEN SIMPLIFICADO ASSUMIDA,,-0.024,tax_riva_240_rs_c,,,,,,atctn_r_iva_e_0240_rs_B,atctn_r_iva_e_0240_rs_V,atctn_r_iva_e_0240_rs_DB,atctn_r_iva_e_0240_rs_DV,-1,-1,1,1
+tax_riva_240_rs_c_cp,r_iva,r.iva.240 r s << cp,,Purchase,RETE IVA 2.40% AL REGIMEN SIMPLIFICADO CONTRAPARTIDA,,0.024,tax_riva_240_rs_c,,,,,,,,,,,,,
+tax_riva_075_rs_c,r_iva,r.iva.075 r s <<,,Purchase,RETE IVA 0.75% AL REGIMEN SIMPLIFICADO,,1,,TRUE,,,,,,,,,,,,
+tax_riva_075_rs_c_asum,r_iva,r.iva.075 r s << asum,,Purchase,RETE IVA 0.75% AL REGIMEN SIMPLIFICADO ASSUMIDA,,-0.0075,tax_riva_075_rs_c,,,,,,atctn_r_iva_e_0075_rs_B,atctn_r_iva_e_0075_rs_V,atctn_r_iva_e_0075_rs_DB,atctn_r_iva_e_0075_rs_DV,-1,-1,1,1
+tax_riva_075_rs_c_cp,r_iva,r.iva.075 r s << cp,,Purchase,RETE IVA 0.75% AL REGIMEN SIMPLIFICADO CONTRAPARTIDA,,0.0075,tax_riva_075_rs_c,,,,,,,,,,,,,
+tax_riva_16_nd_c,r_iva,r.iva.16 n d <<,,Purchase,RETE IVA 16% SERVICIO NACIONAL DE UN NO DOMICILIADO,,1,,TRUE,,,,,,,,,,,,
+tax_riva_16_nd_c_asum,r_iva,r.iva.16 n d << asum,,Purchase,RETE IVA 16% SERVICIO NACIONAL DE UN NO DOMICILIADO ASSUMIDA,,-0.16,tax_riva_16_nd_c,,,,,,atctn_r_iva_e_1600_B,atctn_r_iva_e_1600_V,atctn_r_iva_e_1600_DB,atctn_r_iva_e_1600_DV,-1,-1,1,1
+tax_riva_16_nd_c_cp,r_iva,r.iva.16 n d << cp,,Purchase,RETE IVA 16% SERVICIO NACIONAL DE UN NO DOMICILIADO CONTRAPARTIDA,,0.16,tax_riva_16_nd_c,,,,,,,,,,,,,
+tax_rrenta_FALTA,RRENTAFALTA,RRENTAFALTA,,All,RETE RENTA FALTA (FALTA LA BASE),,1,,,,,,,,,,,,,,
