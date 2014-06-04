@@ -1,7 +1,8 @@
 # -*- encoding: utf-8 -*-
 ###############################################################################
 #                                                                             #
-# Copyright (C) 2014  David Arnold (El Aelman SAS)                            #
+# Copyright (C) 2014                                                          #
+# David Arnold (El Aleman SAS), Hector Ivan Valencia, Juan Pablo Arias        #
 #                                                                             #
 #This program is free software: you can redistribute it and/or modify         #
 #it under the terms of the GNU Affero General Public License as published by  #
@@ -20,31 +21,25 @@
 {
     'name': 'Colombian Localization Base',
     'description': 'Colombian Localization Base',
-    'category': 'Localisation',
+    'category': 'Localization/Account Charts',
     'license': 'AGPL-3',
-    'author': 'El Aleman SAS',
+    'author': 'El Aleman SAS, Hector Ivan Valencia, Juan Pablo Arias',
     'website': '',
     'version': '0.1',
     'depends': [
         'base',
     ],
     'data': [
-        'res.country.state.csv',
-        'l10n_co_base.city.csv',
-        'l10n_co_base_data.xml',
-        'l10n_co_base_view.xml',
-        'res_country_view.xml',
+        'data/res.country.state.csv',
+        'data/res.country.state.city.csv',
         'res_partner_view.xml',
-        'res_company_view.xml',
-        'security/ir.model.access.csv',
-        'security/l10n_co_base_security.xml',
     ],
     'demo': [
-        'l10n_co_base_demo.xml',
+        #'l10n_co_base_demo.xml',
     ],
     'test': [
-        'test/base_inscr_est_valid.yml',
-        'test/base_inscr_est_invalid.yml',
+        #'test/base_inscr_est_valid.yml',
+        #'test/base_inscr_est_invalid.yml',
     ],
     'installable': True,
     'auto_install': False,

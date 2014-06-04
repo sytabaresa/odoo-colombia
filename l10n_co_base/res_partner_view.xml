@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--City-->
+        <record id="view_country_city_tree" model="ir.ui.view">
+            <field name="name">Cities</field>
+            <field name="model">res.country.state.city</field>
+            <field name="arch" type="xml">
+                <tree string="City" version="7.0">
+                    <field name="state_id"/>
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_country_city_form" model="ir.ui.view">
+            <field name="name">Cities</field>
+            <field name="model">res.country.state.city</field>
+            <field name="arch" type="xml">
+                <form string="City" version="7.0">
+                    <group colspan="2" >
+                    <field name="state_id" select="1"/>
+                    <newline/>
+                    <field name="name" select="1"/>
+                    <newline/>
+                    <field name="code" select="1"/>
+                    <newline/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_country_city" model="ir.actions.act_window">
+            <field name="name">Cities</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.country.state.city</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_country_city_tree"/>
+        </record>
+
+        <menuitem action="action_country_city" id="menu_country_city_partner" parent="base.menu_localisation"/>
+
+<!--
+        Hereda la vista de formulario para agregar los campos según la localización colombiana
+        Inherited form view to add the fields as Colombian location
+-->
+
+        <record model="ir.ui.view" id="view_partner_formco">
+            <field name="name">Partner Colombia</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="priority" eval="2"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//form/sheet/group" position="before">
+                    <group col="4" colspan="2" string="Personal data">
+                    <field name="tdoc"/>
+                    </group>
+                </xpath>
+
+                <field name="ref" position="replace"/>
+
+                <field name="tdoc" position="after">
+                    <field name="ref" placeholder="Nº de identificación" required="1"  nolabel="1" on_change="onchange_tdoc(is_company,tdoc)"/>
+                </field>
+
+                <field name="name" position="replace"/>
+
+                <field name="ref" position="after" >
+                    <field name="dv" placeholder="dv" nolabel="1" attrs="{'invisible':[('tdoc','!=','31')]}" style="width: 10%%"/>
+                </field>
+
+                <field name="dv" position="after">
+                    <field name="name" colspan="4" placeholder="NOMBRE O RAZON SOCIAL" attrs="{'invisible':[('is_company','=',False)]}"/>
+                </field>
+
+                <xpath expr="//form/sheet/group[2]" position="before">
+                    <group col="4" colspan="2">
+                    <field name="lastname" placeholder="PRIMER APELLIDO" attrs="{'required':[('is_company','=',False)], 'invisible':[('is_company','=',True)]}" on_change="onchange_name(lastname,surname,firtsname,middlename)" nolabel="1"/>
+                    </group>
+                </xpath>
+
+                <field name="lastname" position="after">
+                    <field name="surname" placeholder="SEGUNDO APELLIDO" attrs="{'invisible':[('is_company','=',True)]}" on_change="onchange_name(lastname,surname,firtsname,middlename)" nolabel="1"/>
+                </field>
+
+                <field name="surname" position="after">
+                    <field name="firtsname" placeholder="PRIMER NOMBRE" attrs="{'required':[('is_company','=',False)], 'invisible':[('is_company','=',True)]}" on_change="onchange_name(lastname,surname,firtsname,middlename)" nolabel="1"/>
+                </field>
+
+                <field name="firtsname" position="after">
+                    <field name="middlename" placeholder="SEGUNDO NOMBRE" attrs="{'invisible':[('is_company','=',True)]}" on_change="onchange_name(lastname,surname,firtsname,middlename)" nolabel="1"/>
+                </field>
+
+                <!-- Ocultar Campos -->
+                <field name="country_id" position="replace"/>
+                <field name="state_id" position="replace"/>
+                <field name="website" position="replace"/>
+                <field name="function" position="replace"/>
+                <field name="fax" position="replace"/>
+                <field name="title" position="replace"/>
+
+                <field name="street2" position="replace">
+                    <field invisible="1" name="street2"/>
+                </field>
+
+                <field name="city" position="replace">
+                    <field name="city" invisible="1"/>
+                </field>
+
+                <!-- Ocultar Zip Code "Aun no aplica para colombia - u_u" -->
+                <field name="zip" position="replace">
+                    <field invisible="1" name="zip" style="width: 1%%"/>
+                </field>
+
+                <field name="street" position="replace">
+                    <field name="street" placeholder="ej. Calle 48 No. 45 - 49"/>
+                </field>
+
+                <field name="street" position="before">
+                    <field name="country_id" class="oe_no_button"  options="{&quot;no_open&quot;: True}" placeholder="Pais"/>
+                    <field name="state_id" class="oe_no_button" domain="[('country_id','=',country_id)]"  on_change="onchange_state(state_id)" options="{&quot;no_open&quot;: True}" placeholder="Departamento" style="width:55%%"/>
+                    <field name="city_id" class="oe_no_button"  options="{&quot;no_open&quot;: True}" placeholder="Cuidad" style="width: 40%%"/>
+                </field>
+
+            </field>
+        </record>
+
+        <!--
+        Hereda la vista arbol para agregar la identificacion en la lista
+        Inherits the tree view to add to the list identification
+        -->
+
+        <record id="vista_partner_tree_co" model="ir.ui.view">
+            <field name="name">Partner Colombia</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+                    <field name="ref" string="Identification"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="action_partner_formco" model="ir.actions.act_window">
+            <field name="name">Tercero</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="vista_partner_tree_co"/>
+        </record>
+
+        <menuitem action="action_partner_formco" id="menu_partner_formco" parent="doctor.menu_doctor_config"/>
+
+    </data>
+</openerp>
