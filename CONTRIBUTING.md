@@ -1,6 +1,8 @@
 #### Contributing to Odoo-Colombia
 
-Bienvenido! Vale la pena de unirse a los desarolladores de la localizacion colombiana. Estmos idealistas, estamos enthusiasticos, pero igual vemos la posibilidad de crear un ecosistema con una fuerte dinamica en donde clientes, partners, utilizadores y otros trabajan juntos para solucionar cada vez problemas mas especificas y para **crecer como communidad entera** abriendo nuevos mercados.
+Bienvenido! Vale la pena de unirse a los desarolladores de la localizacion colombiana. Estmos todos bienvenidos, expertos, idealistas, enthusiasticos, novices...
+
+Vemos la posibilidad de crear un ecosistema con una fuerte dinamica en donde clientes, partners, utilizadores y otros trabajan juntos para solucionar cada vez problemas mas especificas y para **crecer como communidad entera** abriendo nuevos mercados.
 
 Seamos ambiciosos: **Sacamos SIGO del mercado!** *Vamos pues!*
 
